@@ -14,7 +14,7 @@
     "local"
   ],
   "author": "LeoTheCat",
-  "license": "ISC",
+  "license": "MIT",
   "pkg": {
     "assets": ["assets/**"],
     "scripts": ["config.json"],
