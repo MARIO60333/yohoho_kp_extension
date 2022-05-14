@@ -1,0 +1,12 @@
+{
+   "manifest_version": 3,
+   "name": "Yohoho.cc kinopoisk Player",
+   "version": "1.0",
+   "description": "Yohoho.cc popup-плеер для Kinopoisk",
+   "content_scripts": [
+       {
+           "matches": [ "https://www.kinopoisk.ru/film/*/", "https://www.kinopoisk.ru/series/*/" ],
+           "js": [ "app.js" ]
+       }
+   ]
+}

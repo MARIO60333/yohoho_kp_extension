@@ -1,0 +1,58 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style media="screen">
+    html, body, * {
+      margin: 0;
+      padding: 0;
+      font-family: monospace;
+    }
+    body {
+      background: #000;
+      color: #fff;
+    }
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 99999
+    }
+    .loader {
+      position: absolute;
+      width: 100%;
+      height: fit-content;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      text-align: center;
+      z-index: 1;
+    }
+  </style>
+  <title>Yohoho Kinopoisk Player</title>
+</head>
+<body>
+  <div class="loader">
+    <h1>Загрузка...</h1>
+  </div>
+  <div class="content" id="content">
+
+  </div>
+  <script charset="utf-8">
+      function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+          vars[key] = value;
+        });
+        return vars;
+      }
+
+      let content = document.getElementById('content');
+      let id = getUrlVars()["id"]
+      content.innerHTML = content.innerHTML + `<div id="yohoho" data-kinopoisk="${id}"></div>`
+  </script>
+  <script src="//yohoho.cc/yo.js"></script>
+</body>
+</html>

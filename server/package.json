@@ -1,0 +1,26 @@
+{
+  "name": "yohoho_localserv",
+  "version": "1.0.0",
+  "description": "Local server for Yohoho pirate web-player",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yohoho.cc",
+    "player",
+    "http",
+    "server",
+    "local"
+  ],
+  "author": "LeoTheCat",
+  "license": "ISC",
+  "pkg": {
+    "assets": ["assets/**"],
+    "scripts": ["config.json"],
+    "targets": [ "node16-win-x64" ]
+  },
+  "bin": {
+    "kinopoisk_player": "index.js"
+  }
+}
