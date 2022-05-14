@@ -1,2 +1,2 @@
-# yohoho_kp_extension
-🍺
+## Yohoho.cc Kinopoisk Player
+Yohoho.cc popup-плеер для Kinopoisk 
