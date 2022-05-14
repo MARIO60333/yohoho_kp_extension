@@ -1,4 +1,4 @@
-# Yohoho.cc Kinopoisk Player
+# Yohoho.cc KP Player Extension
 Yohoho.cc popup-плеер для Kinopoisk 
 
 ## Дисклеймер
